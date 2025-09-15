@@ -1,4 +1,4 @@
-End-to-end monorepo for an ML-powered web app:
+
 - **apps/api**: FastAPI for inference & admin
 - **apps/web**: Next.js frontend
 - **apps/worker**: RQ/Celery worker for ETL/training
