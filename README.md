@@ -1,1 +1,13 @@
-# fsml
+End-to-end monorepo for an ML-powered web app:
+- **apps/api**: FastAPI for inference & admin
+- **apps/web**: Next.js frontend
+- **apps/worker**: RQ/Celery worker for ETL/training
+- **data**: DVC-managed datasets (remotes for real data)
+- **models**: Saved artifacts & model cards
+- **features**: Feast/Pandera schemas
+- **pipelines**: Prefect/Airflow flows
+- **infra**: Terraform modules/environments
+- **mlflow**: MLflow config
+- Local dev: `just dev`
+- Docker dev: `docker compose up --build`
+- Tests: `just test`
